@@ -12,7 +12,7 @@
     <title>agnes - flexbox gallery</title>
   </head>
   <body>
-    <h1>Species of Whales Gallory</h1>
+    <h1>Species of Whales Gallery</h1>
     <div class="container">
       <div class="card">
         <h2 class="cardheader">Blue Whale</h2>
@@ -23,8 +23,13 @@
         <img class="cardimg" src="img\beluga.png" alt="Beluga Whale" />
       </div>
       <div class="card">
-        <h2 class="cardheader">Bowhead Whale</h2>
-        <img class="cardimg" src="img\bowhead.png" alt="Bowhead Whale" />
+        <div class="front">
+          <h2 class="cardheader">Bowhead Whale</h2>
+          <img class="cardimg" src="img\bowhead.png" alt="Bowhead Whale" />
+        </div>
+        <div class="back">
+          <p>text</p>
+        </div>
       </div>
       <div class="card">
         <h2 class="cardheader">Fin Whale</h2>
@@ -51,5 +56,10 @@
         <img class="cardimg" src="img\seiwhale.png" alt="Sei Whale" />
       </div>
     </div>
+
+    <!-- <div class="flip">
+      <div class="front">Front</div>
+      <div class="back">Back</div>
+    </div> -->
   </body>
 </html>
