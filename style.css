@@ -31,8 +31,8 @@ h1 {
     justify-content: space-around;
 }
 .card {
-    width: 30rem;
-    height: 35rem;
+    width: 50%;
+    height: 55%;
     border: 3px solid rgb(12, 42, 82);
     background-color: rgb(165, 180, 212);
     border-radius: 5px;
@@ -52,30 +52,32 @@ h1 {
 .card {
     transition: all 0.3s;
 }
-.card:hover{
-    transform:rotateY(180deg)
+.card:hover {
+    transform: scale(1.1);
 }
 
 .card{
     height: 500px;
     width: 500px;
     position: relative;
-    
+}   
+/* }
+.card:hover .back{
+    z-index: 1;
+    transform: rotateY(-180deg);
 }
-.card:hover .front{
-    z-index: 3;
-}
-.front, .back{
+/* .front{transform: rotateY(-180deg);} */
+/* .front, .back{
     width: 100%;
     height: 100%;
     position: absolute;
-}
+} */
 /* .front{
     background-color: red;
 
 }*/
-.back{
+/* .front {
+    z-index: 3;
     background-color: rgb(165, 180, 212);
     border-color: rgb(12, 42, 82);
-   
-}
+} */ */
