@@ -52,15 +52,23 @@ h1 {
 .card {
     transition: all 0.3s;
 }
-.card:hover {
-    transform: scale(1.1);
-}
-
 .card{
     height: 500px;
     width: 500px;
     position: relative;
-}   
+}  
+#bluewhale:hover {
+    transform: scale(1.1);
+} 
+#beluga:hover {
+    transform: rotateZ(360deg);
+    transition: 2s;
+}
+#bowheadimg:hover {
+transform: scale(1.3);
+transition: all 0.3s;
+}
+
 /* }
 .card:hover .back{
     z-index: 1;
