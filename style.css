@@ -14,13 +14,13 @@ body {
     font-style: normal;
 }
 h1 {
-    background-color: rgb(76, 129, 199);
-    border: 2px solid rgb(76, 129, 199);
+    background-color: rgb(36, 78, 133);
+    border: 2px solid rgb(8, 34, 68);
     display: relative;
     border-radius: 18px;
     text-align: center;
     font-size: 3rem;
-    color: rgb(12, 42, 82);
+    color: rgb(3, 21, 44);
 }
 .container {
     display: flex;
@@ -45,6 +45,8 @@ h1 {
 }
 .cardimg {
     width: 85%;
+    border: 2px solid rgb(12, 42, 82);
+    border-radius: 5px;
 }
 .cardheader {
     font-size: 1rem;
@@ -73,25 +75,37 @@ h1 {
     filter: grayscale(0.6);
     transform: scale(3);
 }
+#grayimg:hover {
+    transform: rotateX(180deg);
+}
 #humpbackimg:hover {
+    transform: rotateZ(90deg);
 }
 @media screen and (max-width: 1100px) {
     .container {
         flex-direction: row;
     }
     .card {
-        width: 70%
+        width: 30%
     }
 }
 @media screen and (max-width: 800px) {
     .container {
-        flex-direction: column;
+        flex-direction: row;
     }
     .card {
-        width: 75%
+        width: 40%
     }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: row;
+    }
+    .card{
+        width: 70%
+    }
+}
+@media screen and (max-width: 400px) {
     .contianer {
         flex-direction: column;
     }
